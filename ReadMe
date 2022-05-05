@@ -1,0 +1,13 @@
+#To execute the Eclipse maven run:
+step1: Right click Application.java file -> Run As -> Run Configurations.. -> choose maven build option in left side
+step2: Enter the project name -> Base Directory (select the workspace) 
+step3: Goals:spring-boot:run -Dspring.profiles.active=prod
+step4: Click Run button
+
+#(or)To create a project build jar and run
+step1: Right click Application.java file -> Run As -> Run Configurations.. -> choose maven build option in left side
+step2: Enter the project name -> Base Directory (select the workspace)
+step3: Goals: clean install -Dspring.profiles.active=prod
+step4: Click Run button
+step5: To find the springboot-jpa-crud.0.0.1-SNAPSHOT.jar file in /target folder
+step6: java -jar springboot-jpa-crud.0.0.1-SNAPSHOT.jar
